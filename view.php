@@ -29,4 +29,5 @@ if(!$conn)
     echo "</tr>";
  }
  echo "</table>";
+ sqlsrv_free_stmt($getResults);
 ?>

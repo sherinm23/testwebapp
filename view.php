@@ -13,7 +13,7 @@ if(!$conn)
   //echo "Connection Success: connected!"; 
   //display table
   echo "<table border='1'">;
-  $tsl= "SELECT * FROM [dbo].[restaurant]";
+  $tsql= "SELECT * FROM [dbo].[restaurant]";
   $getResults= sqlsrv_query($conn, $tsql);
   if ($getResults == FALSE)
   {

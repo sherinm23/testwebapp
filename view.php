@@ -10,7 +10,7 @@ if(!$conn)
   {
     die("Error connection: ".sqlsrv_errors());
   }
-  //echo "Connection Success: connected!"; 
+  echo "Connection Success: connected!"; 
   //display table
   echo "<table border='1'";
   $sql= "SELECT * FROM [dbo].[restaurant]";

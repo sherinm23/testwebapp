@@ -24,10 +24,9 @@ if(!$conn)
     echo "<tr>";
     echo "<td>". $row['restaurant_id'] . "</td>";
     echo "<td>". $row['restaurant_name'] ."</td>";
-     echo "<td>". $row['restaurant_address'] . "</td>";
+    echo "<td>". $row['restaurant_address'] . "</td>";
     echo "<td>". $row['restaurant_phone'] . "</td>";
     echo "</tr>";
  }
- sqlsrv_free_stmt($getResults);
  echo "</table>";
 ?>

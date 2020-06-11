@@ -6,13 +6,12 @@
   $serverName = "tcp:ddactp044399.database.windows.net,1433";
   $conn = sqlsrv_connect($serverName, $connectionInfo);
   
-if(!$conn)
+ if(!$conn)
   {
     die("Error connection: ".sqlsrv_errors());
   }
-  //echo "Connection Success: connected!"; 
-  //display table
-echo "<table border='1'>";
+ // echo "Connection Success: connected!";
+ echo "<table border='1'>";
 $tsql= "SELECT * FROM [dbo].[restaurant]";
 $getResults= sqlsrv_query($conn, $tsql);
 if ($getResults == FALSE)
@@ -30,4 +29,3 @@ echo "</tr>";
 }
 sqlsrv_free_stmt($getResults);
 ?>
-
